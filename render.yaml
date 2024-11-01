@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-app
+    buildCommand: |
+      corepack enable
+      corepack prepare yarn@4.2.2 --activate
+      yarn install
